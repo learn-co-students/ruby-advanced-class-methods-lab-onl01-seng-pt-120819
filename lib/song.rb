@@ -52,7 +52,6 @@ class Song
   #class method
   def self.alphabetical
     @@all.sort_by {|song|song.name}
-
   end
   
   #class constructor 
@@ -64,14 +63,11 @@ class Song
     song
   end
   
-  
-  
   #class constructor 
   def self.create_from_filename(file_name)
     song = self.new_from_filename(file_name)
     @@all << song
   end
- 
   
   #class method
   def self.destroy_all
